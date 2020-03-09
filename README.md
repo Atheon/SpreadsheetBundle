@@ -17,8 +17,17 @@ The supported formats are sames of PhpSpreadsheet (Open Document .ods, Office Ex
 
 **1**  Add to composer.json to the `require` key
 
-``` shell
-    composer require atheon/spreadsheetbundle
+``` json
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Atheon/SpreadsheetBundle"
+        }
+    ],
+    "require": {
+        ....
+        "atheon/spreadsheetbundle": "1.0.*",
+    },
 ``` 
 
 **2** Register the bundle :
